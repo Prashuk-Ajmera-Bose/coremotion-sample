@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CoreMotionTest_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" text="Device Motion" textAlignment="center" id="siU-4a-Eza">
+                            <color key="textColor" red="1" green="0.54747181576765869" blue="0.32374434766055937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <label width="1" alignment="left" text="X" textAlignment="center" numberOfLines="0" id="7Ti-au-6xP"/>
+                        <label width="1" alignment="left" text="Accelerometer" textAlignment="center" id="tjn-0v-2ll">
+                            <color key="textColor" red="1" green="0.54747181576765869" blue="0.32374434766055937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <label width="1" alignment="left" text="Y" textAlignment="center" id="bRc-1f-3Cm"/>
+                        <label width="1" alignment="left" text="Gyroscopes" textAlignment="center" id="AOq-hc-aN1">
+                            <color key="textColor" red="1" green="0.54747181576765869" blue="0.32374434766055937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <label width="1" alignment="left" text="Z" textAlignment="center" id="8nM-fH-UDb"/>
+                    </items>
+                    <connections>
+                        <outlet property="xMotion" destination="7Ti-au-6xP" id="udi-2P-KbW"/>
+                        <outlet property="yMotion" destination="bRc-1f-3Cm" id="kQe-zD-PGZ"/>
+                        <outlet property="zMotion" destination="8nM-fH-UDb" id="LtW-hA-p4t"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="101" y="-5"/>
+        </scene>
+    </scenes>
+</document>
